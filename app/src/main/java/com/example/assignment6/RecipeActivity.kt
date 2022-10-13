@@ -9,6 +9,7 @@ class RecipeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recipe)
 
+        title = "Recipe"
         val food = intent.getSerializableExtra("food") as Food
         details_image.setImageResource(food.image)
         details_name.text = food.name
