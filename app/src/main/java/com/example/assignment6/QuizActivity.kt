@@ -44,12 +44,11 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
         if (selectedRadio != -1 && selectedCheckBoxes.count() > 0) {
             var score = 0
             if (selectedRadio == R.id.thirdRadio)
-                score = 50
+                score += 50
 
-            selectedCheckBoxes.forEach {
-                if (it == firstCheckBox || it == thirdCheckBox)
-                    score += 25
-            }
+            if (selectedCheckBoxes.count() == 1 && selectedCheckBoxes.first() == firstCheckBox)
+                score += 50
+
 
             showResult(score)
 

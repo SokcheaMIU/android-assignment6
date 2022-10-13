@@ -86,11 +86,11 @@
 
         <CheckBox
             android:id="@+id/firstCheckBox"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:buttonTint="#000000"
-            android:text="Linux Kernel"
+            android:text="Application Framework"
             android:textColor="#000000"
             android:textSize="14sp"
             app:layout_constraintBottom_toTopOf="@+id/secondCheckBox"
@@ -114,11 +114,11 @@
 
         <CheckBox
             android:id="@+id/thirdCheckBox"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:buttonTint="#000000"
-            android:text="Application Framework"
+            android:text="Core Service"
             android:textColor="#000000"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
