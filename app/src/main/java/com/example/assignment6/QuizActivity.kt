@@ -2,8 +2,10 @@ package com.example.assignment6
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.view.View
 import android.widget.CheckBox
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.children
 import kotlinx.android.synthetic.main.activity_quiz.*
@@ -50,6 +52,9 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
             }
 
             showResult(score)
+
+        } else {
+            Toast.makeText(this, "Please answer all the questions.", Toast.LENGTH_SHORT).show()
         }
     }
 
